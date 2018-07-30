@@ -3,8 +3,9 @@ dist
 .tmp
 bower_components
 test/bower_components
+
 # IDEs and editors
-/.idea
+.idea/
 .project
 .classpath
 .c9/
