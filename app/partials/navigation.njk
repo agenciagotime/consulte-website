@@ -1,0 +1,11 @@
+{% macro activePage(page = 'home') %}
+  <div class="header">
+    <ul class="nav nav-pills pull-right">
+      <li class="{% if page == 'home' %} active {% endif %}"><a href="index.html">Home</a></li>
+      <li class="{% if page == 'about' %} active {% endif %}"><a href="about.html">A Consulte</a></li>
+      <li class="{% if page == 'products' %} active {% endif %}"><a href="products.html">Produtos</a></li>
+      <li class="{% if page == 'contact' %} active {% endif %}"><a href="contact.html">Contato</a></li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+{% endmacro %}

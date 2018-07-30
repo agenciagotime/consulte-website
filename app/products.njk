@@ -1,0 +1,14 @@
+{% set title = 'Produtos' %}
+{% extends "layouts/default.njk" %}
+
+{% block content %}
+
+  {% import "partials/navigation.njk" as navigation %}
+  {{ navigation.activePage('products') }}
+
+
+  <h1>Page Products</h1>
+
+  {%- include "partials/footer.njk" %}
+
+{% endblock %}

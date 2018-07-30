@@ -1,0 +1,14 @@
+{% set title = 'A Consulte' %}
+{% extends "layouts/default.njk" %}
+
+{% block content %}
+
+  {% import "partials/navigation.njk" as navigation %}
+  {{ navigation.activePage('about') }}
+
+
+  <h1>Page About</h1>
+
+  {%- include "partials/footer.njk" %}
+
+{% endblock %}

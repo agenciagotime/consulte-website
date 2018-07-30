@@ -1,0 +1,16 @@
+<!-- Declare title of page  -->
+{% set title = 'Home' %}
+
+<!-- Extends to load base structure  -->
+{% extends "layouts/default.njk" %}
+
+{% block content %}
+
+   {% import "partials/navigation.njk" as navigation %}
+   {{ navigation.activePage('home') }}
+
+   <h1>Index</h1>
+
+   {%- include "partials/footer.njk" %}
+
+{% endblock %}
